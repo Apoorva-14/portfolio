@@ -1,0 +1,22 @@
+.banner {
+    position: relative;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%
+}
+
+.banner.home {
+    background-position: center top;
+    background-image: url("./assets/images/me.jpg");
+}
+
+.banner.section-1 {
+    background-image: url("https://images.unsplash.com/photo-1538506392157-218c11f95129");
+}
+
+.banner.foot {
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1506619216599-9d16d0903dfd");
+}

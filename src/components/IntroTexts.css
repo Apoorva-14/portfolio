@@ -1,0 +1,55 @@
+.intro-text {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    opacity: 0.6;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 300;
+    font-size: 50px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transition: visibility 1s linear;
+}
+
+@media only screen and (min-width: 960px) {
+    .intro-text {
+        top: 80%;
+    }
+}
+
+.fadeIn {
+    visibility: visible;
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    visibility: hidden;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(.25);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    
+    to {
+        transform: scale(.25);
+        opacity: 0;
+    }
+}
