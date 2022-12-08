@@ -1,32 +1,23 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import {
-  AppBar, IconButton, ThemeProvider, Toolbar, Typography,
+  AppBar, ThemeProvider, Toolbar, Typography,
 } from '@material-ui/core';
-import { BrightnessHigh, BrightnessLow } from '@material-ui/icons';
-import React, { useState } from 'react';
-import { darkTheme, lightTheme, useStyles } from './theme';
-import Cloud from './components/Cloud';
+import React from 'react';
+import { theme, useStyles } from './theme';
 import IntroTexts from './components/IntroTexts';
+import About from './components/About';
 import './App.css';
 
 export default function App() {
-  const [darkState, setDarkState] = useState(true);
   const classes = useStyles();
 
-  const handleThemeChange = () => {
-    setDarkState(!darkState);
-  };
-
   return (
-    <ThemeProvider theme={darkState ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme}>
       <AppBar position="sticky">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Me
           </Typography>
-          {/* <IconButton onClick={handleThemeChange}>
-            {darkState ? <BrightnessHigh /> : <BrightnessLow />}
-          </IconButton> */}
         </Toolbar>
       </AppBar>
       <ReactFullpage
@@ -36,7 +27,9 @@ export default function App() {
             <div className="section banner home">
               <IntroTexts />
             </div>
-            <div className="section banner section-1" />
+            <div className="section banner section-1">
+              <About />
+            </div>
             <div className="section banner foot" />
           </ReactFullpage.Wrapper>
         )}
