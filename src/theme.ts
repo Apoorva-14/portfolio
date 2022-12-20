@@ -1,13 +1,13 @@
 import {
-  createTheme, responsiveFontSizes, makeStyles, createStyles,
+  createTheme, responsiveFontSizes,
 } from '@material-ui/core/styles';
 
 /**
  * Theme
  */
-export const theme = responsiveFontSizes(createTheme({
+const theme = responsiveFontSizes(createTheme({
   typography: {
-    fontFamily: 'Comic Neue, cursive',
+    fontFamily: 'Comic Neue',
   },
   palette: {
     type: 'dark',
@@ -15,13 +15,9 @@ export const theme = responsiveFontSizes(createTheme({
       main: 'rgba(51, 29, 21, 1)',
     },
     background: {
-      paper: 'rgba(60, 179, 113, 0.2)',
+      paper: 'rgba(161, 189, 166, 0.9)',
     },
   },
 }));
 
-export const useStyles = makeStyles(() => createStyles({
-  title: {
-    flexGrow: 1,
-  },
-}));
+export default theme;

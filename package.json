@@ -16,7 +16,7 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "start": "HOST=localhost PORT=5000 react-scripts start",
+    "start": "HOST=localhost PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
