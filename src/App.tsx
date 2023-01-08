@@ -5,6 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
 import {
   HashRouter as Router,
+  Link as RouterLink,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -34,7 +35,7 @@ export default function App() {
         <AppBar position="sticky">
           <Toolbar>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Link variant="h6" color='textPrimary' href='/#/'>
+              <Link component={RouterLink} variant="h6" color='textPrimary' to='/'>
                 ME
               </Link>
             </Box>
@@ -42,7 +43,8 @@ export default function App() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  href={`/#/${page.toLowerCase()}`}
+                  component={RouterLink}
+                  to={`/${page.toLowerCase()}`}
                   onClick={handleCloseNavMenu}
                 >
                   {page}
@@ -79,7 +81,8 @@ export default function App() {
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Link
                       key={page}
-                      href={`/#/${page.toLowerCase()}`}
+                      component={RouterLink}
+                      to={`/${page.toLowerCase()}`}
                     >
                       {page}
                     </Link>
@@ -88,7 +91,7 @@ export default function App() {
               </Menu>
             </Box>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <Link variant="h6" color='textPrimary' href='/#/'>
+              <Link component={RouterLink} variant="h6" color='textPrimary' to='/'>
                 ME
               </Link>
             </Box>

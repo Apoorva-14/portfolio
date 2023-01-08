@@ -2,6 +2,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
 import About from '../components/About';
 import IntroTexts from '../components/IntroTexts';
+import WorkLinks from '../components/WorkLinks';
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
           <div className="section banner section-1">
             <About />
           </div>
-          <div className="section banner foot" />
+          <div className="section banner foot">
+            <WorkLinks />
+          </div>
         </ReactFullpage.Wrapper>
       )}
     />

@@ -7,7 +7,6 @@
     "@fullpage/react-fullpage": "^0.1.19",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "gh-pages": "^3.2.3",
     "ramda": "^0.27.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,8 +18,6 @@
     "start": "HOST=localhost PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b releases",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
