@@ -10,7 +10,6 @@ import {
   Route,
 } from 'react-router-dom';
 import theme from './theme';
-import './App.css';
 import Home from './pages/home';
 import Interest from './pages/interest';
 import Contact from './pages/contact';
@@ -44,7 +43,7 @@ export default function App() {
                 <Button
                   key={page}
                   component={RouterLink}
-                  to={`/${page.toLowerCase()}`}
+                  to={`/${page.toLowerCase()}/`}
                   onClick={handleCloseNavMenu}
                 >
                   {page}
@@ -82,7 +81,7 @@ export default function App() {
                     <Link
                       key={page}
                       component={RouterLink}
-                      to={`/${page.toLowerCase()}`}
+                      to={`/${page.toLowerCase()}/`}
                     >
                       {page}
                     </Link>
@@ -101,13 +100,13 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/work">
+          <Route path="/work/">
             <Work />
           </Route>
-          <Route path="/interest">
+          <Route path="/interest/">
             <Interest />
           </Route>
-          <Route path="/contact">
+          <Route path="/contact/">
             <Contact />
           </Route>
         </Switch>

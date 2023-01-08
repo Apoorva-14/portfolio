@@ -1,5 +1,6 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
+import './home.css';
 import About from '../components/About';
 import IntroTexts from '../components/IntroTexts';
 import WorkLinks from '../components/WorkLinks';

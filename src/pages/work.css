@@ -1,0 +1,12 @@
+.work-items {
+    flex-grow: 1;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+}
+
+.work-item-content {
+    padding: 24px;
+}
