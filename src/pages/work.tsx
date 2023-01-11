@@ -75,6 +75,7 @@ export default function Work() {
                 <Card raised={true}>
                   <CardMedia
                     classes={mediaStyles}
+                    style={{ backgroundSize: '500px' }}
                     image={'https://raw.githubusercontent.com/Apoorva-14/modeling-future/main/Design.png'}
                   />
                   <CardContent className='work-item-contetnt'>
