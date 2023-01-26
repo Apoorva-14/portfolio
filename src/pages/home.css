@@ -12,12 +12,12 @@
 }
 
 .banner.section-1 {
-    background-image: url("https://images.unsplash.com/photo-1538506392157-218c11f95129");
+    background-image: url("../assets/images/greenery.jpeg");
 }
 
 .banner.foot {
     background-position: center;
-    background-image: url("https://images.unsplash.com/photo-1506619216599-9d16d0903dfd");
+    background-image: url("../assets/images/coffee.jpeg");
 }
 
 @media only screen and (max-width: 960px) {

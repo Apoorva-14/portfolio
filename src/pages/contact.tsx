@@ -9,6 +9,7 @@ import {
 } from '@material-ui/icons';
 import React from 'react';
 
+import ContactBackImage from '../assets/images/contact-back.avif';
 import MeAvatar from '../assets/images/me-avatar.jpeg';
 
 const useStyles = makeStyles(() => createStyles({
@@ -38,7 +39,7 @@ export default function Contact() {
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
-          image={'https://images.unsplash.com/photo-1568646815107-01383e0a8844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80'}
+          image={ContactBackImage}
         />
         <Avatar className={classes.avatar} alt="Remy Sharp" src={MeAvatar} />
         <CardContent>

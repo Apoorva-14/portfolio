@@ -7,6 +7,16 @@
     align-items: center;
 }
 
-.work-item-content {
-    padding: 24px;
+.work-item-media.modeling-future {
+    background-size: 600px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .work-items {
+        padding: 24px;
+    }
+
+    .work-item-media.modeling-future {
+        background-size: 500px;
+    }
 }
