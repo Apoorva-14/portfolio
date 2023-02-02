@@ -1,20 +1,19 @@
 import './interest.css';
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import { Box } from '@material-ui/core';
+import { Box, Container } from '@material-ui/core';
+
+import AtomicHabitsImage from '../assets/images/atomic-habits.jpeg';
+import HookedImage from '../assets/images/hooked.jpeg';
+import ThinkingInBetsImage from '../assets/images/thinking-in-bets.jpeg';
 
 export default function Interest() {
   return (
     <Container>
-      <Box paddingTop={'25px'}>
-        <Typography variant="h3" gutterBottom>
-          Some of my favorite books
-        </Typography>
-      </Box>
+      <Box paddingTop={'30px'} paddingBottom={'30px'}>
+      <div className="interest-title">These are the books which helped me to think outside the box</div>
       <div className="wrap">
         <div className="tile">
-          <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80' />
+          <img src={ThinkingInBetsImage} />
           <div className="text">
             <h1>Thinking in Bets</h1>
             <p className="animate-text">Thinking in Bets is probably the best book for decision making that I have read. Poker champion turned decision strategist and speaker Anne Duke draws on examples from business, sports, politics, and (of course) poker to share tools anyone can use to embrace uncertainty and make better decisions.</p>
@@ -29,7 +28,7 @@ export default function Interest() {
         </div>
 
         <div className="tile">
-          <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80' />
+          <img src={AtomicHabitsImage} />
           <div className="text">
             <h1>Atomic Habits</h1>
             <p className="animate-text">Atomic Habits is a book written by James Clear. It is a self-help book that takes a scientific and logical approach to understand how small habits impact our lives and how developing a few great habits and working on them daily for a long time will lead to higher productivity.</p>
@@ -44,10 +43,11 @@ export default function Interest() {
         </div>
 
         <div className="tile">
-          <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80' />
+          <img src={HookedImage} />
           <div className="text">
-            <h1>Lorem ipsum.</h1>
-            <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+            <h1>Hooked</h1>
+            <p className="animate-text">Hooked is written by Eyal. He summed up his years of research, consulting, and practical experience in this book. This is how-to guide for building better products.</p>
+            <p className="animate-text">It is written for product managers, designers, marketers, start-up founders, and anyone who seeks to understand how products influence our behaviour.</p>
             <span className="more-text">Tap to read more</span>
             <div className="dots">
               <span></span>
@@ -57,6 +57,7 @@ export default function Interest() {
           </div>
         </div>
       </div>
+      </Box>
     </Container>
   );
 }

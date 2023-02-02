@@ -3,11 +3,17 @@ import './work.css';
 import {
   Box,
   Card,
+  CardActions,
   CardContent,
   CardMedia,
   Container,
   Grid,
+  IconButton,
 } from '@material-ui/core';
+import {
+  Description as DescriptionIcon,
+  GitHub as GitHubIcon,
+} from '@material-ui/icons';
 
 import React from 'react';
 import TextInfoContent from '@mui-treasury/components/content/textInfo';
@@ -34,7 +40,7 @@ export default function Work() {
                 <Box height="100px" sx={{ display: { xs: 'none', md: 'flex' } }}></Box>
               </Grid>
               <Grid item sm={12}>
-              <Card raised={true}>
+                <Card raised={true}>
                   <CardMedia
                     classes={mediaStyles}
                     image={GrubGoImage}
@@ -48,39 +54,23 @@ export default function Work() {
                       }
                     />
                   </CardContent>
+                  <CardActions disableSpacing>
+                    <IconButton aria-label="open document" target='_blank' href='https://docs.google.com/document/d/1ebe4yCEnX8owGpt3SZUgBjmqgNx7d9YJJYGJS0_dHHA/edit?usp=sharing'>
+                      <DescriptionIcon />
+                    </IconButton>
+                    <IconButton aria-label="open github" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton>
+                    {/* <IconButton aria-label="open figma" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton> */}
+                  </CardActions>
                 </Card>
               </Grid>
             </Grid>
           </Grid>
           <Grid item sm={12} md={4} className="work-item mid">
             <Grid container direction='column' >
-              <Grid item sm={12}>
-              <Card raised={true}>
-                  <CardMedia
-                    classes={mediaStyles}
-                    image={TriggersImage}
-                  />
-                  <CardContent className='work-item-contetnt'>
-                    <TextInfoContent
-                      classes={textCardContentStyles}
-                      heading={'Consignment Triggers'}
-                      body={
-                        'Designed and developed trigger feature for every leg of consignment reducing the no. of calls to fleet operators by ~80%. Leveraged Jira software to increase on time delivery per sprint by 9%. Managed cross-functional team and stakeholder communication, and oversaw tech development from inception to implementation.'
-                      }
-                    />
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item sm={12}>
-                <Box height="100px" sx={{ display: { xs: 'none', md: 'flex' } }}></Box>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item sm={12} md={4} className="work-item side">
-            <Grid container direction='column'>
-              <Grid item sm={12}>
-                <Box height="100px" sx={{ display: { xs: 'none', md: 'flex' } }}></Box>
-              </Grid>
               <Grid item sm={12}>
                 <Card raised={true}>
                   <CardMedia
@@ -97,6 +87,55 @@ export default function Work() {
                       }
                     />
                   </CardContent>
+                  <CardActions disableSpacing>
+                    <IconButton aria-label="open document" target='_blank' href=''>
+                      <DescriptionIcon />
+                    </IconButton>
+                    <IconButton aria-label="open github" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton>
+                    {/* <IconButton aria-label="open figma" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton> */}
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item sm={12}>
+                <Box height="100px" sx={{ display: { xs: 'none', md: 'flex' } }}></Box>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item sm={12} md={4} className="work-item side">
+            <Grid container direction='column'>
+              <Grid item sm={12}>
+                <Box height="100px" sx={{ display: { xs: 'none', md: 'flex' } }}></Box>
+              </Grid>
+              <Grid item sm={12}>
+                <Card raised={true}>
+                  <CardMedia
+                    classes={mediaStyles}
+                    image={TriggersImage}
+                  />
+                  <CardContent className='work-item-contetnt'>
+                    <TextInfoContent
+                      classes={textCardContentStyles}
+                      heading={'Consignment Triggers'}
+                      body={
+                        'Designed and developed trigger feature for every leg of consignment reducing the no. of calls to fleet operators by ~80%. Leveraged Jira software to increase on time delivery per sprint by 9%. Managed cross-functional team and stakeholder communication, and oversaw tech development from inception to implementation.'
+                      }
+                    />
+                  </CardContent>
+                  <CardActions disableSpacing>
+                    <IconButton aria-label="open document" target='_blank' href=''>
+                      <DescriptionIcon />
+                    </IconButton>
+                    <IconButton aria-label="open github" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton>
+                    {/* <IconButton aria-label="open figma" target='_blank' href=''>
+                      <GitHubIcon />
+                    </IconButton> */}
+                  </CardActions>
                 </Card>
               </Grid>
             </Grid>
