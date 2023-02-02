@@ -1,3 +1,7 @@
+body {
+    overflow: visible!important;
+}
+
 .interest-title, .wrap {
     margin: 0px auto;
     width: 100%;

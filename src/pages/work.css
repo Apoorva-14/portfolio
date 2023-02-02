@@ -1,3 +1,7 @@
+body {
+    overflow: visible!important;
+}
+
 .work-items {
     flex-grow: 1;
 }
