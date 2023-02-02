@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a8b157f4.chunk.css",
+    "main.css": "/portfolio/static/css/main.9093b0c1.chunk.css",
     "main.js": "/portfolio/static/js/main.3fa7ba76.chunk.js",
     "main.js.map": "/portfolio/static/js/main.3fa7ba76.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.478229ac.js",
@@ -8,7 +8,7 @@
     "static/js/2.22a27834.chunk.js": "/portfolio/static/js/2.22a27834.chunk.js",
     "static/js/2.22a27834.chunk.js.map": "/portfolio/static/js/2.22a27834.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a8b157f4.chunk.css.map": "/portfolio/static/css/main.a8b157f4.chunk.css.map",
+    "static/css/main.9093b0c1.chunk.css.map": "/portfolio/static/css/main.9093b0c1.chunk.css.map",
     "static/js/2.22a27834.chunk.js.LICENSE.txt": "/portfolio/static/js/2.22a27834.chunk.js.LICENSE.txt",
     "static/media/about.486366cb.jpeg": "/portfolio/static/media/about.486366cb.jpeg",
     "static/media/atomic-habits.f9254b1f.jpeg": "/portfolio/static/media/atomic-habits.f9254b1f.jpeg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.478229ac.js",
     "static/js/2.22a27834.chunk.js",
-    "static/css/main.a8b157f4.chunk.css",
+    "static/css/main.9093b0c1.chunk.css",
     "static/js/main.3fa7ba76.chunk.js"
   ]
 }
