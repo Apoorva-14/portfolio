@@ -1,1 +1,424 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/portfolio/manifest.json"><link rel="shortcut icon" href="/portfolio/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"><script type="text/javascript">!function(i){if(i.search){var a={};i.search.slice(1).split("&").forEach((function(i){var l=i.split("=");a[l[0]]=l.slice(1).join("=").replace(/~and~/g,"&")})),void 0!==a.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(a.p||"")+(a.q?"?"+a.q:"")+i.hash)}}(window.location)</script><title>Portfolio</title><link href="/portfolio/static/css/main.9093b0c1.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root" style="height:calc(100vh - 55px)"></div><script>!function(e){function r(r){for(var n,a,l=r[0],p=r[1],f=r[2],c=0,s=[];c<l.length;c++)a=l[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in p)Object.prototype.hasOwnProperty.call(p,n)&&(e[n]=p[n]);for(i&&i(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var p=t[l];0!==o[p]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/portfolio/";var l=this["webpackJsonpapoorva.sharma"]=this["webpackJsonpapoorva.sharma"]||[],p=l.push.bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)r(l[f]);var i=p;t()}([])</script><script src="/portfolio/static/js/2.22a27834.chunk.js"></script><script src="/portfolio/static/js/main.3fa7ba76.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script type="module" crossorigin src="/assets/index-23000b1f.js"></script>
+    <link rel="stylesheet" href="/assets/index-67d987f5.css">
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-white">
+      <nav>
+        <div class="max-w-6xl mx-auto px-8 py-8">
+          <div class="flex justify-between">
+            <!-- social -->
+            <div class="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/apoorva-sharma-9353a4170/"
+                target="_blank"
+              >
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Apoorva-14" target="_blank">
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-github"></i>
+                </button>
+              </a>
+              <a href="https://medium.com/@apoorvasharma141195" target="_blank">
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-medium"></i>
+                </button>
+              </a>
+            </div>
+            <!-- secondary nav -->
+            <div class="hidden md:flex items-center space-x-1 text-gray-500">
+              <a
+                class="py-2 px-5 hover:text-black active:line-through"
+                href="#home"
+                >.home</a
+              >
+              <a
+                class="py-2 px-5 hover:text-black active:line-through"
+                href="#projects"
+                >.work</a
+              >
+              <a
+                class="py-2 px-5 hover:text-black active:line-through"
+                href="#skills"
+                >.skills</a
+              >
+              <a
+                class="py-2 px-5 hover:text-black active:line-through"
+                href="#books"
+                >.books</a
+              >
+            </div>
+            <!-- mobile button goes here -->
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button">
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+          <a
+            href="#home"
+            class="block py-4 px-4 text-sm hover:bg-gray-200 text-center"
+            >.home</a
+          >
+          <a
+            href="#projects"
+            class="block py-4 px-4 text-sm hover:bg-gray-200 text-center"
+            >.work</a
+          >
+          <a
+            href="#skills"
+            class="block py-4 px-4 text-sm hover:bg-gray-200 text-center"
+            >.skills</a
+          >
+          <a
+            href="#books"
+            class="block py-4 px-4 text-sm hover:bg-gray-200 text-center"
+            >.books</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="divide-y">
+      <section id="home" class="max-w-5xl mx-auto px-8 py-20">
+        <div class="flex">
+          <div class="grow pr-8 py-10">
+            <span class="text-sm text-[#489393] font-mono font-semibold"
+              >. hello, it's apoorva</span
+            >
+            <h1 class="text-6xl font-semibold my-12 pr-8">
+              I design & build unique products
+            </h1>
+            <div class="flex justify-between">
+              <button
+                class="bg-orange-600 text-white px-5 py-2 text-lg min-w-max"
+              >
+                <i class="fa-solid fa-comment-dots"></i> Let's Talk
+              </button>
+              <div class="text-md px-12">
+                I seek to bring four years of professional technical experience
+                to a product manager position
+              </div>
+            </div>
+            <div class="flex justify-end mt-12">
+              <a
+                href="#projects"
+                class="font-mono font-semibold flex flex-col items-center"
+              >
+                Scroll Down<br /><i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-none bg-[#489393] items-end">
+            <img src="/assets/appie-7766c55b.jpeg" width="450" class="brightness-125" />
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="max-w-5xl mx-auto px-8 py-20">
+        <h1 class="max-w-3xl text-5xl font-semibold my-4">
+          Products that I<br />build for solving problems
+        </h1>
+        <div class="overflow-x-auto flex items-stretch justify-start py-10">
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/grubgo-30913578.png)"
+              class="bg-center bg-contain bg-no-repeat bg-slate-200 w-80 h-64 my-4"
+            ></div>
+            <div class="flex justify-between w-full">
+              <span class="text-lg font-semibold">GrubGo App</span>
+              <a
+                class="underline text-orange-600"
+                target="_blank"
+                href="https://docs.google.com/document/d/1ebe4yCEnX8owGpt3SZUgBjmqgNx7d9YJJYGJS0_dHHA/edit"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <p class="text-justify text-slate-600">
+              One cannot think well, love well, sleep well, if one has not dined
+              well. No denial to Virgina Woolfe. Food helps us to boost
+              serotonin and also helps us to socialise and grow bonding with
+              people. We do have various dine-out apps but there are certain
+              things we are still missing which we would like to accomplish with
+              this app idea.
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/modeling-future-4f05846a.png)"
+              class="bg-cover w-80 h-64 my-4"
+            ></div>
+            <div class="flex justify-between w-full">
+              <span class="text-lg font-semibold">Modelling Future App</span>
+              <a
+                class="underline text-orange-600"
+                target="_blank"
+                href="https://github.com/Apoorva-14/modeling-future"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <p class="text-justify text-slate-600">
+              App that helps match fresh graduates to relevant jobs. Prepared
+              PRD defining the requirements for business and technical teams.
+              Gathered user stories, outlining students' perspective.
+              Implemented wire-frame and mock-ups using Figma.
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/starbucks-e9f52b44.png)"
+              class="bg-cover w-80 h-64 my-4"
+            ></div>
+            <div class="flex justify-between w-full">
+              <span class="text-lg font-semibold"
+                >Hooked Model for Starbucks</span
+              >
+              <a
+                class="underline text-orange-600"
+                target="_blank"
+                href="https://medium.com/@apoorvasharma141195/overview-6b1ee0018934"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <p class="text-justify text-slate-600">
+              Could anything be better than writing a case study about your
+              favourite product?! Definitely not. I am a big Java junkie.
+              Starbucks plays a significant role not only in my life but in
+              other people's lives also. It's a go-to destination for quality
+              coffee and a comfortable gathering place.
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/triggers-d2b3f128.png)"
+              class="bg-center bg-cover w-80 h-64 my-4"
+            ></div>
+            <div class="flex justify-between w-full">
+              <span class="text-lg font-semibold">Consignment Triggers</span>
+              <a
+                class="underline text-orange-600"
+                target="_blank"
+                href="https://docs.google.com/document/d/1E1m3j9CbymucBBX6leXYtdUrvG8EBCNt0lqEbMsLin8/edit"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <p class="text-justify text-slate-600">
+              Designed and developed trigger feature for every leg of
+              consignment reducing the no. of calls to fleet operators by ~80%.
+              Leveraged Jira software to increase on time delivery per sprint by
+              9%. Managed cross-functional team and stakeholder communication,
+              and oversaw tech development from inception to implementation.
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/ola-v-uber-66d8eeed.webp)"
+              class="bg-center bg-cover w-80 h-64 my-4"
+            ></div>
+            <div class="flex justify-between w-full">
+              <span class="text-lg font-semibold">Ola vs Uber</span>
+              <a
+                class="underline text-orange-600"
+                target="_blank"
+                href="https://medium.com/@apoorvasharma141195/ola-vs-uber-b3c7581b416d"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <p class="text-justify text-slate-600">
+              We all use these apps on a daily basis. They are solving the same
+              customer pain points but they also have some visible difference
+              between them which allow users to choose their favourite.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="max-w-5xl mx-auto px-8 pt-20 pb-8">
+        <h1 class="text-5xl font-semibold my-4">What I Do</h1>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <p class="text-justify text-slate-600">
+              I am a Software Engineer, and I enjoy coding. However, even more
+              than the implementation of the logic for code, I enjoy interacting
+              with stakeholders to collect requirements for the applications I
+              build, and laying out the user-centred design specifications. I
+              thrive when dealing with ambiguity and defining the user
+              experience for the products I develop.
+            </p>
+          </div>
+          <div><svg width="100" height="250"></svg></div>
+        </div>
+      </section>
+      <section id="books" class="max-w-5xl mx-auto px-8 py-20">
+        <h1 class="max-w-3xl text-5xl font-semibold mt-4">
+          Books that help me<br />think outside the box
+        </h1>
+        <div class="overflow-x-auto flex items-stretch justify-start">
+          <div class="w-[400px] mx-2">
+            <div
+              style="background-image: url(/assets/thinking-in-bets-c43c90c5.jpeg)"
+              class="bg-center bg-cover w-80 h-64 my-4"
+            ></div>
+            <h2 class="text-lg font-semibold my-4">Thinking in Bets</h2>
+            <p class="text-justify text-slate-600">
+              Thinking in Bets is probably the best book for decision making
+              that I have read. Poker champion turned decision strategist and
+              speaker Anne Duke draws on examples from business, sports,
+              politics, and (of course) poker to share tools anyone can use to
+              embrace uncertainty and make better decisions.<br />
+              By shifting your thinking from a need for certainty to a goal of
+              accurately assessing what you know and what you don't, you'll be
+              less vulnerable to reactive emotions, knee-jerk biases, and
+              destructive habits in your decision making. You'll become more
+              confident, calm, compassionate and successful in the long run.
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/atomic-habits-7a2b203f.jpeg)"
+              class="bg-center bg-cover w-80 h-64 my-4"
+            ></div>
+            <h2 class="text-lg font-semibold my-4">Atomic Habits</h2>
+            <p class="text-justify text-slate-600">
+              Atomic Habits is a book written by James Clear. It is a self-help
+              book that takes a scientific and logical approach to understand
+              how small habits impact our lives and how developing a few great
+              habits and working on them daily for a long time will lead to
+              higher productivity.<br />
+              "Every action you take is a vote for the type of person you wish
+              to become. No single instance will transform your beliefs, but as
+              the votes build up, so does the evidence of your new identity."
+            </p>
+          </div>
+          <div class="w-[400px] mx-4">
+            <div
+              style="background-image: url(/assets/hooked-a1860df6.jpeg)"
+              class="bg-center bg-cover w-80 h-64 my-4"
+            ></div>
+            <h2 class="text-lg font-semibold my-4">Hooked</h2>
+            <p class="text-justify text-slate-600">
+              Hooked is written by Eyal. He summed up his years of research,
+              consulting, and practical experience in this book. This is how-to
+              guide for building better products.<br />
+              It is written for product managers, designers, marketers, start-up
+              founders, and anyone who seeks to understand how products
+              influence our behaviour.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-row max-w-5xl mx-auto px-8 h-80">
+        <div class="basis-2/3 text-center">
+          <h1
+            class="text-center text-5xl font-semibold py-4 border-b-2 border-black"
+          >
+            Have any project in mind
+          </h1>
+          <div class="mt-12 mb-4">
+            <i class="fa-solid fa-envelope text-orange-600"></i>
+            <span class="font-semibold"> Email me at: </span
+            ><a href="mailto:apoorvasharma0014@gmail.com"
+              >apoorvasharma0014@gmail.com</a
+            >
+          </div>
+          <div class="mt-4 mb-12">
+            <span class="font-semibold">Follow me on: </span>
+            <span>
+              <a
+                href="https://www.linkedin.com/in/apoorva-sharma-9353a4170/"
+                target="_blank"
+              >
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Apoorva-14" target="_blank">
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-github"></i>
+                </button>
+              </a>
+              <a href="https://medium.com/@apoorvasharma141195" target="_blank">
+                <button class="w-8 h-8 rounded-full ring-1 ring-gray-300">
+                  <i class="fa-brands fa-medium"></i>
+                </button>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="basis-1/3 flex flex-col justify-center items-center px-12">
+          <button class="bg-orange-600 text-white px-5 py-2 text-lg min-w-max">
+            <i class="fa-solid fa-comment-dots"></i> Let's Talk
+          </button>
+          <div class="my-4 text-center">
+            For my detailed profile and experiences:
+          </div>
+          <a
+            href="/ApoorvaSharma-Resume.pdf"
+            class="text-sm text-[#489393] font-mono font-medium flex flex-col items-center"
+            download
+            ><i class="fa-solid fa-file fa-4x"></i>. download cv</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="max-w-6xl mx-auto px-8 py-8 border-t">
+        <div class="flex justify-between">
+          <div class="hidden md:flex items-center space-x-1 text-gray-500">
+            <a
+              class="py-2 px-5 hover:text-black active:line-through"
+              href="#home"
+              >.home</a
+            >
+            <a
+              class="py-2 px-5 hover:text-black active:line-through"
+              href="#projects"
+              >.work</a
+            >
+            <a
+              class="py-2 px-5 hover:text-black active:line-through"
+              href="#skills"
+              >.skills</a
+            >
+            <a
+              class="py-2 px-5 hover:text-black active:line-through"
+              href="#books"
+              >.books</a
+            >
+          </div>
+          <div class="text-gray-500">
+            Copyright &copy; Apoorva Sharma. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
