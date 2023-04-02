@@ -9,8 +9,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-9bce9d64.js"></script>
-    <link rel="stylesheet" href="/portfolio/assets/index-77335332.css">
+    <script type="module" crossorigin src="/portfolio/assets/index-32f8782f.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-10480e7a.css">
   </head>
   <body>
     <header class="sticky top-0 z-50 bg-white">
@@ -151,7 +151,50 @@
         <h1 class="max-w-3xl text-5xl font-semibold my-4">
           Here are the Projects<br />I've Worked On
         </h1>
-        <div class="overflow-x-auto flex items-stretch justify-start py-10">
+        <div class="flex justify-end pt-10">
+          <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm">
+            <a
+              id="project-prev"
+              class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Previous</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              id="project-next"
+              class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Next</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <div
+          id="project-container"
+          class="overflow-x-auto scroll-smooth flex items-stretch justify-start pb-10"
+        >
           <div class="w-[400px] first:ml-0 mx-4">
             <div
               style="background-image: url(/portfolio/assets/grubgo-30913578.png)"
@@ -287,7 +330,50 @@
         <h1 class="max-w-3xl text-5xl font-semibold mt-4">
           Books that help me<br />think outside the box
         </h1>
-        <div class="overflow-x-auto flex items-stretch justify-start">
+        <div class="flex justify-end pt-10">
+          <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm">
+            <a
+              id="book-prev"
+              class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Previous</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              id="book-next"
+              class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Next</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <div
+          id="book-container"
+          class="overflow-x-auto scroll-smooth flex items-stretch justify-start"
+        >
           <div class="w-[400px] first:ml-0 mx-4">
             <div
               style="background-image: url(/portfolio/assets/thinking-in-bets-c43c90c5.jpeg)"
