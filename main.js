@@ -14,3 +14,5 @@ const bookContainer = document.getElementById("book-container");
 const bookNavPrev = document.getElementById("book-prev");
 const bookNavNext = document.getElementById("book-next");
 setupNav(bookContainer, bookNavPrev, bookNavNext);
+
+console.log("Setup complete.");

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://apoorva-14.github.io/portfolio/",
+  "homepage": "https://apoorva.work/",
   "type": "module",
   "scripts": {
     "start": "vite",
